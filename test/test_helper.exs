@@ -1,1 +1,1 @@
-ExUnit.start(trace: true, color: true)
+ExUnit.start(color: true)

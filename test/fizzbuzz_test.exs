@@ -1,6 +1,6 @@
 defmodule FizzBuzzTest do
 
-  use ExUnit.Case, async: true # tracing is enabled, so only one task is running at any given moment
+  use ExUnit.Case, async: true
   doctest FizzBuzz
 
   test "concats two lists properly" do
