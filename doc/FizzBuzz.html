@@ -1,0 +1,244 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.1">
+    <title>FizzBuzz – exploring_elixir v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-c922dbe7ef.css" />
+    
+    <script src="dist/sidebar_items-58ee69f0a5.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        exploring_elixir
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">exploring_elixir v0.1.0</small>
+        FizzBuzz
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>  A module that contains fizz-buzz helpers.</p>
+<p>  What’s fizz-buzz?</p>
+<p>  It’s a simple programming task that checks the base programming knowledge. It takes a number (or a range) and it should print/return the following:</p>
+<ul>
+<li>“Fizz” for values divisible by 3,
+</li>
+<li>“Buzz” for values divisible by 5,
+</li>
+<li>“FizzBuzz” for values divisible by both 3 and 5
+</li>
+<li>the passed value if none of the above matches
+</li>
+</ul>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_range/2">get_range(start, finish)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a list of FizzBuzz values from a range</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_single_value/1">get_single_value(number)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Gets a single FizzBuzz value from the argument</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#print_range/2">print_range(start, finish)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>Prints a range of FizzBuzz cases, from <code class="inline">start</code> to <code class="inline">finish</code>, using the FizzBuzz.get_range function</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="get_range/2">
+  
+  
+  <div class="detail-header">
+    <a href="#get_range/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_range(start, finish)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a list of FizzBuzz values from a range</p>
+<p>  ## Examples</p>
+<pre><code class="iex elixir">iex&gt; FizzBuzz.get_range(0, 15)
+[0, 1, 2, &quot;Fizz&quot;, 4, &quot;Buzz&quot;, &quot;Fizz&quot;, 7, 8, &quot;Fizz&quot;, &quot;Buzz&quot;, 11, &quot;Fizz&quot;, 13, 14, &quot;FizzBuzz&quot;]</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="get_single_value/1">
+  
+  
+  <div class="detail-header">
+    <a href="#get_single_value/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_single_value(number)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>  Gets a single FizzBuzz value from the argument</p>
+<p>  ## Examples</p>
+<pre><code class="iex elixir">iex&gt; FizzBuzz.get_single_value(15)
+&quot;FizzBuzz&quot;</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="print_range/2">
+  
+  
+  <div class="detail-header">
+    <a href="#print_range/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">print_range(start, finish)</span>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>  Prints a range of FizzBuzz cases, from <code class="inline">start</code> to <code class="inline">finish</code>, using the FizzBuzz.get_range function</p>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.18.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle"><span class="sr-only">Switch theme</span></button>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-778c9ef903.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+
