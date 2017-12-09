@@ -31,7 +31,6 @@ defmodule FizzBuzz do
   @doc """
     Gets a list of FizzBuzz values from a range
 
-    ## Examples
       iex> FizzBuzz.get_range(0, 15)
       [0, 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
   """
@@ -40,7 +39,6 @@ defmodule FizzBuzz do
   @doc """
     Gets a single FizzBuzz value from the argument
 
-    ## Examples
       iex> FizzBuzz.get_single_value(15)
       "FizzBuzz"
   """
