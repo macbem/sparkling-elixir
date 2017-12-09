@@ -3,10 +3,6 @@ defmodule FizzBuzzTest do
   use ExUnit.Case, async: true
   doctest FizzBuzz
 
-  test "concats two lists properly" do
-    assert Exercise.list_concat [:a, :b], [:c, :d] == [:a, :b, :c, :d]
-  end
-
   test "returns a correct value for 15-divisible entry" do
     assert FizzBuzz.get_single_value(15) ==  "FizzBuzz"
 
