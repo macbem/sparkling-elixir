@@ -34,4 +34,5 @@ defmodule FizzBuzzTest do
 
     assert expected == FizzBuzz.get_range(0, 15)
   end
+
 end
