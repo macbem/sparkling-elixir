@@ -18,18 +18,25 @@ defmodule FizzBuzz do
   defp exec(number), do: number
 
   defp range(start, finish) do
-
-    retval = []
-    for number <- start..finish, do: retval ++ [number]
-
+    Enum.map(start..finish, &(exec &1))
   end
 
-  def print_range(start, finish, true) do
+  @doc """
+    Prints a range of FizzBuzz cases, from `start` to `finish`.
+  """
+  def print_range(start, finish) do
     for entry <- range(start, finish), do: IO.puts entry
   end
 
   def get_range(start, finish), do: range start, finish
 
+  @doc """
+    Gets a single FizzBuzz value from the argument
+
+    ## Examples
+      iex> FizzBuzz.get_single_value(15)
+      "FizzBuzz"
+  """
   def get_single_value(number), do: exec number
 
 end

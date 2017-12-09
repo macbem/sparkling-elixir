@@ -29,4 +29,9 @@ defmodule FizzBuzzTest do
     assert 1 == FizzBuzz.get_single_value 1
   end
 
+  test "returns a correct range list" do
+    expected = [0, 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+
+    assert expected == FizzBuzz.get_range(0, 15)
+  end
 end
