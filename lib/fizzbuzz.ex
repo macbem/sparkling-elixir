@@ -22,12 +22,19 @@ defmodule FizzBuzz do
   end
 
   @doc """
-    Prints a range of FizzBuzz cases, from `start` to `finish`.
+    Prints a range of FizzBuzz cases, from `start` to `finish`, using the FizzBuzz.get_range function
   """
   def print_range(start, finish) do
     for entry <- range(start, finish), do: IO.puts entry
   end
 
+  @doc """
+    Gets a list of FizzBuzz values from a range
+
+    ## Examples
+      iex> FizzBuzz.get_range(0, 15)
+      [0, 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+  """
   def get_range(start, finish), do: range start, finish
 
   @doc """
